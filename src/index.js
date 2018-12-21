@@ -1,11 +1,10 @@
-import Game from './Game/Game.js'
-import Level from './Game/Level.js'
-import Car from './Game/Car.js'
+import Game from '../Core/Game.js'
+import Level from '../Core/Level.js'
+import Car from '../Core/Car.js'
 
 class MyCar extends Car {
   constructor(level) {
     super(level)
-    this.setActive(true)
   }
 
   preUpdate() {

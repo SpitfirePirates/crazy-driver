@@ -7,6 +7,8 @@ export default class Car extends Phaser.Physics.Matter.Image {
     this.setAngle(-90);
     this.setFrictionAir(0.1);
     this.setMass(10);
+    
+    this.setActive(true)
   }
 
   goForwards() {
