@@ -5,9 +5,10 @@ import Car from './Game/Car.js'
 class MyCar extends Car {
   constructor(level) {
     super(level)
+    this.setActive(true)
   }
-  
-  update() {
+
+  preUpdate() {
     this.goForwards()
   }
 }
@@ -17,7 +18,7 @@ class MyLevel extends Level {
     super.create()
     
     const car = new MyCar(this)
-    this.add.existing(car)
+    this.spawn(car)
   }
 
   update() {
