@@ -1,6 +1,4 @@
-import Game from '../Core/Game.js'
-import Level from '../Core/Level.js'
-import Car from '../Core/Car.js'
+import { Game, Level, Car } from '../Core'
 
 class MyCar extends Car {
   constructor(level) {
